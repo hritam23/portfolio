@@ -1209,16 +1209,21 @@ section {
 }
 
 .snooker-game-card {
-    padding: 24px;
+    padding: 28px 24px;
     max-width: 860px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .game-controls {
+    width: 100%;
+    max-width: 800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
+    margin: 0 auto 16px auto;
 }
 
 .game-score {
@@ -1233,6 +1238,11 @@ section {
 .canvas-wrapper {
     position: relative;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
@@ -1241,8 +1251,10 @@ section {
 
 #snookerCanvas {
     width: 100%;
+    max-width: 800px;
     height: auto;
     display: block;
+    margin: 0 auto;
     cursor: crosshair;
     touch-action: none;
 }
@@ -1304,7 +1316,9 @@ section {
 }
 
 .unlocked-skills-container {
-    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
     padding-top: 16px;
     border-top: 1px solid var(--border-color);
 }
