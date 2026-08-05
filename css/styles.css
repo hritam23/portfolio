@@ -1192,3 +1192,163 @@ section {
         font-size: 1.85rem;
     }
 }
+
+/* Custom Cursor Mobile Disable */
+@media (max-width: 768px), (pointer: coarse) {
+    #cursor-dot, #cursor-ring {
+        display: none !important;
+    }
+}
+
+/* Snooker Game Section */
+.snooker-section {
+    padding: 70px 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.snooker-game-card {
+    padding: 24px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.game-score {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.canvas-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    background: #291305;
+}
+
+#snookerCanvas {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: crosshair;
+    touch-action: none;
+}
+
+.snooker-toast {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0f172a;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: var(--shadow-lg);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.snooker-toast.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -20px);
+}
+
+.toast-icon {
+    font-size: 1.4rem;
+    color: #f59e0b;
+}
+
+.toast-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.toast-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: #94a3b8;
+    letter-spacing: 0.1em;
+}
+
+.toast-text h4 {
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.pop-anim {
+    animation: popBounce 0.5s ease;
+}
+
+@keyframes popBounce {
+    0% { transform: translate(-50%, -20px) scale(0.8); }
+    50% { transform: translate(-50%, 0) scale(1.1); }
+    100% { transform: translate(-50%, 0) scale(1); }
+}
+
+.unlocked-skills-container {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.unlocked-title {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.unlocked-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 36px;
+    align-items: center;
+}
+
+.unlocked-badge {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    padding: 5px 12px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.empty-hint {
+    font-size: 0.85rem;
+    color: var(--text-subtle);
+    font-style: italic;
+}
+
+/* Skill Highlight Flash Animation */
+.skill-highlight {
+    animation: cardPulse 1.5s ease infinite alternate;
+}
+
+@keyframes cardPulse {
+    0% { border-color: var(--border-color); box-shadow: var(--shadow-sm); }
+    100% { border-color: var(--accent-blue); box-shadow: 0 0 20px rgba(37, 99, 235, 0.3); transform: translateY(-4px); }
+}

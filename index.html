@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hritam Shrivastava | Portfolio | AI/ML & Embedded Systems Engineer</title>
-    <meta name="description" content="Portfolio of Hritam Shrivastava - B.Tech ECE (Biomedical) Student at VIT Vellore. Specializing in AI/ML, Data Science, VLSI, and Embedded Systems.">
+    <title>Hritam Shrivastava | Portfolio</title>
+    <meta name="description" content="Portfolio of Hritam Shrivastava - Biomedical Electronics Engineering Student at VIT Vellore. Specializing in AI/ML, Data Science, VLSI, and Embedded Systems.">
     
     <!-- Google Fonts: Space Mono, Fira Code & Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
 </head>
 <body class="light-theme">
 
-    <!-- Custom Sleek Interactive Cursor -->
+    <!-- Custom Sleek Interactive Cursor (Desktop Only) -->
     <div id="cursor-dot"></div>
     <div id="cursor-ring"></div>
 
@@ -33,6 +33,7 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About & Certificates</a></li>
+                <li><a href="#snooker-game" class="nav-link">Snooker Game</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -307,6 +308,53 @@
             </div>
         </section>
 
+        <!-- Interactive 2D 8-Ball Snooker Game Section -->
+        <section id="snooker-game" class="snooker-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">// INTERACTIVE MINI-GAME</span>
+                    <h2 class="section-title">8-Ball Snooker <span class="highlight-text">Skill Unlocker</span></h2>
+                    <p class="section-intro">Drag & shoot the white cue ball into colored balls. Every ball you sink unlocks one of my technical skills below!</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="snooker-game-card matte-card">
+                    <div class="game-controls">
+                        <div class="game-score">
+                            <i class="fa-solid fa-[#0f172a] fa-circle-dot"></i>
+                            <span>Skills Sunk: <strong id="skillsSunkCount">0</strong> / 10</span>
+                        </div>
+                        <div class="game-actions">
+                            <button id="resetSnookerBtn" class="btn btn-secondary btn-sm">
+                                <i class="fa-solid fa-rotate-left"></i> Reset Table
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Snooker Table Canvas Container -->
+                    <div class="canvas-wrapper">
+                        <canvas id="snookerCanvas" width="800" height="420"></canvas>
+                        <!-- Dynamic Toast Popup Banner -->
+                        <div id="snookerToast" class="snooker-toast hidden">
+                            <i class="fa-solid fa-trophy toast-icon"></i>
+                            <div class="toast-text">
+                                <span class="toast-label">SKILL UNLOCKED!</span>
+                                <h4 id="toastSkillTitle">Python & AI/ML</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unlocked Skills Bar -->
+                    <div class="unlocked-skills-container">
+                        <span class="unlocked-title">Unlocked Skills:</span>
+                        <div id="unlockedSkillsList" class="unlocked-skills-list">
+                            <span class="empty-hint">Pot a ball into any of the 6 pockets to reveal a skill!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Skills Section (Compact Grid, No Filters) -->
         <section id="skills" class="skills-section">
             <div class="container">
@@ -318,7 +366,7 @@
 
                 <div class="skills-grid compact-skills">
                     <!-- AI & ML -->
-                    <div class="skill-card compact-card matte-card">
+                    <div class="skill-card compact-card matte-card" id="skill-card-1">
                         <div class="skill-head">
                             <i class="fa-brands fa-python skill-icon py"></i>
                             <div>
@@ -329,7 +377,7 @@
                         <p class="skill-desc">OpenCV, Scikit-Learn, NumPy, Pandas, Data Pipelines.</p>
                     </div>
 
-                    <div class="skill-card compact-card matte-card">
+                    <div class="skill-card compact-card matte-card" id="skill-card-2">
                         <div class="skill-head">
                             <i class="fa-solid fa-eye skill-icon cv"></i>
                             <div>
@@ -340,7 +388,7 @@
                         <p class="skill-desc">Facial landmark tracking, EAR calculations, real-time image processing.</p>
                     </div>
 
-                    <div class="skill-card compact-card matte-card">
+                    <div class="skill-card compact-card matte-card" id="skill-card-3">
                         <div class="skill-head">
                             <i class="fa-solid fa-chart-line skill-icon ml"></i>
                             <div>
@@ -352,7 +400,7 @@
                     </div>
 
                     <!-- VLSI & Embedded -->
-                    <div class="skill-card compact-card matte-card">
+                    <div class="skill-card compact-card matte-card" id="skill-card-4">
                         <div class="skill-head">
                             <i class="fa-solid fa-microchip skill-icon chip"></i>
                             <div>
@@ -363,7 +411,7 @@
                         <p class="skill-desc">RTL design, decision logic simulation, in-memory computing array validation.</p>
                     </div>
 
-                    <div class="skill-card compact-card matte-card">
+                    <div class="skill-card compact-card matte-card" id="skill-card-5">
                         <div class="skill-head">
                             <i class="fa-solid fa-wave-square skill-icon cad"></i>
                             <div>
@@ -374,7 +422,7 @@
                         <p class="skill-desc">Schematic entry, transient analysis, CMOS decision logic, GAA transistor MAC.</p>
                     </div>
 
-                    <div class="skill-card compact-card matte-card">
+                    <div class="skill-card compact-card matte-card" id="skill-card-6">
                         <div class="skill-head">
                             <i class="fa-solid fa-code skill-icon emb"></i>
                             <div>
@@ -385,7 +433,7 @@
                         <p class="skill-desc">ARM Cortex-M, STM32, 8051, FreeRTOS, ADC sensor interfaces.</p>
                     </div>
 
-                    <div class="skill-card compact-card matte-card">
+                    <div class="skill-card compact-card matte-card" id="skill-card-7">
                         <div class="skill-head">
                             <i class="fa-solid fa-layer-group skill-icon pcb"></i>
                             <div>
@@ -397,7 +445,7 @@
                     </div>
 
                     <!-- Core CS & Tools -->
-                    <div class="skill-card compact-card matte-card">
+                    <div class="skill-card compact-card matte-card" id="skill-card-8">
                         <div class="skill-head">
                             <i class="fa-solid fa-database skill-icon sql"></i>
                             <div>
@@ -408,7 +456,7 @@
                         <p class="skill-desc">Database design, query optimization, normalization & joins.</p>
                     </div>
 
-                    <div class="skill-card compact-card matte-card">
+                    <div class="skill-card compact-card matte-card" id="skill-card-9">
                         <div class="skill-head">
                             <i class="fa-solid fa-sitemap skill-icon dsa"></i>
                             <div>
@@ -419,7 +467,7 @@
                         <p class="skill-desc">Data Structures, Algorithms, Object-Oriented Design in C++/Java.</p>
                     </div>
 
-                    <div class="skill-card compact-card matte-card">
+                    <div class="skill-card compact-card matte-card" id="skill-card-10">
                         <div class="skill-head">
                             <i class="fa-brands fa-git-alt skill-icon git"></i>
                             <div>
@@ -741,6 +789,7 @@
 
     <!-- Custom JavaScript -->
     <script src="js/cursor.js"></script>
+    <script src="js/snooker.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
