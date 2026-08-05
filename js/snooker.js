@@ -257,16 +257,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show Toast above table with auto fade-out
         if (toast && toastSkillTitle) {
             toastSkillTitle.textContent = ball.name;
-            toast.style.display = 'flex';
-            setTimeout(() => toast.classList.remove('hidden'), 10);
+            toast.classList.remove('hidden');
             toast.classList.add('pop-anim');
             setTimeout(() => toast.classList.remove('pop-anim'), 600);
 
             if (toastTimeout) clearTimeout(toastTimeout);
             toastTimeout = setTimeout(() => {
                 toast.classList.add('hidden');
-                setTimeout(() => { toast.style.display = 'none'; }, 400);
-            }, 2500);
+            }, 2000);
         }
 
         // Add Tag to Unlocked Skills List
