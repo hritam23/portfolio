@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hritam Shrivastava | Portfolio | AI/ML & Embedded Systems Engineer</title>
+    <meta name="description" content="Portfolio of Hritam Shrivastava - B.Tech ECE (Biomedical) Student at VIT Vellore. Specializing in AI/ML, Data Science, VLSI, and Embedded Systems.">
+    
+    <!-- Google Fonts: Space Mono, Fira Code & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="light-theme">
+
+    <!-- Custom Sleek Interactive Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-header">
+        <nav class="nav-container">
+            <a href="#home" class="logo-brand">
+                <span class="logo-code">&lt;</span>Hritam<span class="logo-dot">.</span>S<span class="logo-code">/&gt;</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About & Certificates</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight-text">Hritam Shrivastava</span>
+                    </h1>
+
+                    <h2 class="hero-subtitle">
+                        &gt; Building <span class="typewriter" id="typewriter"></span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Dedicated & analytical engineer bridging hardware and software. Specializing in 
+                        <strong>Machine Learning, Computer Vision, Embedded Systems, & VLSI Design</strong>. 
+                        Proven innovator with national hackathon wins and research experience at IIT Bhilai.
+                    </p>
+
+                    <div class="hero-tags">
+                        <span class="tag"><i class="fa-solid fa-location-dot"></i> Durg / Vellore, India</span>
+                        <span class="tag"><i class="fa-solid fa-graduation-cap"></i> VIT Vellore (CGPA 8.74)</span>
+                        <span class="tag"><i class="fa-solid fa-trophy"></i> SIH & Yantra Winner</span>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <i class="fa-solid fa-certificate"></i> <span>Certificates</span>
+                        </a>
+                        <a href="https://github.com/hritam23" target="_blank" rel="noopener" class="btn btn-icon-only" title="GitHub Profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hritam-shrivastava-07679a28a/" target="_blank" rel="noopener" class="btn btn-icon-only" title="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="profile-photo-wrapper">
+                        <img src="assets/hritam-photo.jpg" alt="Hritam Shrivastava" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Certificates Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">// BACKGROUND & CREDENTIALS</span>
+                    <h2 class="section-title">About Me & <span class="highlight-text">Certifications</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Summary & Education -->
+                    <div class="about-bio matte-card">
+                        <div class="bio-header">
+                            <i class="fa-solid fa-user-gear bio-icon"></i>
+                            <h3>Professional Summary</h3>
+                        </div>
+                        <p class="bio-text">
+                            I am a Biomedical Electronics Engineering student at <strong>Vellore Institute of Technology (VIT Vellore)</strong> 
+                            with a strong foundation in software development (AI/ML, Data Science, OpenCV) and hardware systems (Embedded C/C++, Verilog, Cadence Virtuoso, KiCAD).
+                        </p>
+                        <p class="bio-text">
+                            Driven by cross-disciplinary innovation, I have built real-time computer vision drowsiness detectors, Smart EMG-based prosthetic limbs, and conducted cutting-edge in-memory computing research using FeRAM arrays at <strong>IIT Bhilai</strong>.
+                        </p>
+
+                        <div class="edu-timeline">
+                            <h4 class="timeline-title"><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h5>B.Tech in Electronics & Communication (Biomedical Specialization)</h5>
+                                    <span class="timeline-institution">Vellore Institute of Technology (VIT), Vellore</span>
+                                    <span class="timeline-date">2023 – Present • <strong>CGPA: 8.74 / 10</strong></span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h5>Senior Secondary (CBSE Class 12 PCM) & High School</h5>
+                                    <span class="timeline-institution">Delhi Public School, Durg, Chhattisgarh</span>
+                                    <span class="timeline-date">Class 12: 86.4% | Class 10: 86.6%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Highlights & Quick Stats -->
+                    <div class="about-stats-column">
+                        <div class="stat-card matte-card">
+                            <div class="stat-card-icon dark"><i class="fa-solid fa-brain"></i></div>
+                            <div>
+                                <h4>AI/ML & Software Domain</h4>
+                                <p>Python, OpenCV, Scikit-Learn, NumPy, Pandas, Data Structures, SQL (MySQL)</p>
+                            </div>
+                        </div>
+                        <div class="stat-card matte-card">
+                            <div class="stat-card-icon dark"><i class="fa-solid fa-microchip"></i></div>
+                            <div>
+                                <h4>VLSI & Embedded Systems Domain</h4>
+                                <p>Embedded C/C++, Verilog/VHDL, Cadence Virtuoso, Keil µVision, PCB Design, HSPICE</p>
+                            </div>
+                        </div>
+                        <div class="stat-card matte-card">
+                            <div class="stat-card-icon dark"><i class="fa-solid fa-award"></i></div>
+                            <div>
+                                <h4>National Hackathon Achievements</h4>
+                                <p>2nd Prize Winner @ Yantra Central Ideathon (₹50,000) & SIH VIT Internals Winner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificates Showcase Grid -->
+                <div class="certificates-container">
+                    <h3 class="certificates-title">
+                        <i class="fa-solid fa-certificate"></i> Verified Certificates & Specializations
+                    </h3>
+
+                    <div class="cert-grid">
+                        <!-- Cert: IIT Bhilai Internship -->
+                        <div class="cert-card matte-card" data-cert="iitbhilai">
+                            <div class="cert-badge">VLSI Research</div>
+                            <div class="cert-icon"><i class="fa-solid fa-atom"></i></div>
+                            <div class="cert-body">
+                                <h4>Research Internship Certificate</h4>
+                                <span class="cert-issuer">Indian Institute of Technology (IIT), Bhilai</span>
+                                <p class="cert-project">Designing of FeRAM Array for MAC Operation</p>
+                                <div class="cert-meta">
+                                    <span><i class="fa-regular fa-calendar"></i> May 2026 – June 2026</span>
+                                    <span class="cert-id">Dr. Nitanshu Chauhan (ECE Dept)</span>
+                                </div>
+                            </div>
+                            <button class="cert-view-btn" onclick="openCertModal('iitbhilai')">View Details <i class="fa-solid fa-expand"></i></button>
+                        </div>
+
+                        <!-- Cert: SAIL Bhilai Internship -->
+                        <div class="cert-card matte-card" data-cert="sailbhilai">
+                            <div class="cert-badge">Grade: Excellent</div>
+                            <div class="cert-icon"><i class="fa-solid fa-industry"></i></div>
+                            <div class="cert-body">
+                                <h4>Project Internship Certificate</h4>
+                                <span class="cert-issuer">Bhilai Steel Plant (SAIL)</span>
+                                <p class="cert-project">Patrolling Car Using Arduino</p>
+                                <div class="cert-meta">
+                                    <span><i class="fa-regular fa-calendar"></i> May 2025 – June 2025</span>
+                                    <span class="cert-id">Regn. No: P-25/5176</span>
+                                </div>
+                            </div>
+                            <button class="cert-view-btn" onclick="openCertModal('sailbhilai')">View Details <i class="fa-solid fa-expand"></i></button>
+                        </div>
+
+                        <!-- Cert: Maven Silicon -->
+                        <div class="cert-card matte-card" data-cert="maven">
+                            <div class="cert-badge">Embedded Systems</div>
+                            <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <div class="cert-body">
+                                <h4>Embedded System Design Internship</h4>
+                                <span class="cert-issuer">Maven Silicon (ACEIC Centre of Excellence)</span>
+                                <p class="cert-project">Specialized Microcontroller & Firmware Design</p>
+                                <div class="cert-meta">
+                                    <span><i class="fa-regular fa-calendar"></i> May 2025 – Jul 2025</span>
+                                    <span class="cert-id">MSUID: MS/B2BESDI/2025-26-189</span>
+                                </div>
+                            </div>
+                            <button class="cert-view-btn" onclick="openCertModal('maven')">View Details <i class="fa-solid fa-expand"></i></button>
+                        </div>
+
+                        <!-- Cert: EMI/EMC VIT -->
+                        <div class="cert-card matte-card" data-cert="emc">
+                            <div class="cert-badge">Hardware & Standards</div>
+                            <div class="cert-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <div class="cert-body">
+                                <h4>EMI / EMC Basics and Standards</h4>
+                                <span class="cert-issuer">School of Electronics Engineering (SENSE), VIT Vellore</span>
+                                <p class="cert-project">VAC2338 - Value-Added Course</p>
+                                <div class="cert-meta">
+                                    <span><i class="fa-regular fa-calendar"></i> Jan 2026 – Mar 2026</span>
+                                    <span class="cert-id">Offline Course</span>
+                                </div>
+                            </div>
+                            <button class="cert-view-btn" onclick="openCertModal('emc')">View Details <i class="fa-solid fa-expand"></i></button>
+                        </div>
+
+                        <!-- Cert: Sensor & Biomedical Hackathon -->
+                        <div class="cert-card matte-card" data-cert="hackathon">
+                            <div class="cert-badge">Hackathon Award</div>
+                            <div class="cert-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <div class="cert-body">
+                                <h4>Sensor & Biomedical Hackathon</h4>
+                                <span class="cert-issuer">Industry-Academia Conclave (IAC) 2025, VIT Vellore</span>
+                                <p class="cert-project">Electronics Renaissance & Sustainability</p>
+                                <div class="cert-meta">
+                                    <span><i class="fa-regular fa-calendar"></i> Sept 2025</span>
+                                    <span class="cert-id">SENSE School Recognition</span>
+                                </div>
+                            </div>
+                            <button class="cert-view-btn" onclick="openCertModal('hackathon')">View Details <i class="fa-solid fa-expand"></i></button>
+                        </div>
+
+                        <!-- Cert: Techonet Python -->
+                        <div class="cert-card matte-card" data-cert="techonet">
+                            <div class="cert-badge">Python / Software</div>
+                            <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+                            <div class="cert-body">
+                                <h4>Python Programming Course</h4>
+                                <span class="cert-issuer">Techonet Private Limited, Bhilai</span>
+                                <p class="cert-project">Two-Month Intensive Python Training</p>
+                                <div class="cert-meta">
+                                    <span><i class="fa-regular fa-calendar"></i> May 2023 – Jul 2023</span>
+                                    <span class="cert-id">Ref: TECHONET/RT/DC/2023/08/21</span>
+                                </div>
+                            </div>
+                            <button class="cert-view-btn" onclick="openCertModal('techonet')">View Details <i class="fa-solid fa-expand"></i></button>
+                        </div>
+
+                        <!-- Cert: SQL LinkedIn -->
+                        <div class="cert-card matte-card" data-cert="sql">
+                            <div class="cert-badge">Databases</div>
+                            <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+                            <div class="cert-body">
+                                <h4>SQL Essential Training</h4>
+                                <span class="cert-issuer">LinkedIn Learning</span>
+                                <p class="cert-project">Relational Databases & MySQL Queries</p>
+                                <div class="cert-meta">
+                                    <span><i class="fa-regular fa-calendar"></i> Jan 2024</span>
+                                    <span class="cert-id">Cert ID: 8b739b269a30...</span>
+                                </div>
+                            </div>
+                            <button class="cert-view-btn" onclick="openCertModal('sql')">View Details <i class="fa-solid fa-expand"></i></button>
+                        </div>
+
+                        <!-- Cert: Project Management -->
+                        <div class="cert-card matte-card" data-cert="pm">
+                            <div class="cert-badge">Management</div>
+                            <div class="cert-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="cert-body">
+                                <h4>Project Management Fundamentals</h4>
+                                <span class="cert-issuer">LinkedIn Learning</span>
+                                <p class="cert-project">Agile Workflows & Project Execution</p>
+                                <div class="cert-meta">
+                                    <span><i class="fa-regular fa-calendar"></i> Verified</span>
+                                    <span class="cert-id">LinkedIn Credential</span>
+                                </div>
+                            </div>
+                            <button class="cert-view-btn" onclick="openCertModal('pm')">View Details <i class="fa-solid fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (Compact Grid, No Filters) -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">// TECHNICAL EXPERTISE</span>
+                    <h2 class="section-title">Skills & <span class="highlight-text">Technologies</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid compact-skills">
+                    <!-- AI & ML -->
+                    <div class="skill-card compact-card matte-card">
+                        <div class="skill-head">
+                            <i class="fa-brands fa-python skill-icon py"></i>
+                            <div>
+                                <h4>Python</h4>
+                                <span class="skill-cat">AI & Automation</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">OpenCV, Scikit-Learn, NumPy, Pandas, Data Pipelines.</p>
+                    </div>
+
+                    <div class="skill-card compact-card matte-card">
+                        <div class="skill-head">
+                            <i class="fa-solid fa-eye skill-icon cv"></i>
+                            <div>
+                                <h4>Computer Vision</h4>
+                                <span class="skill-cat">OpenCV & ML</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Facial landmark tracking, EAR calculations, real-time image processing.</p>
+                    </div>
+
+                    <div class="skill-card compact-card matte-card">
+                        <div class="skill-head">
+                            <i class="fa-solid fa-chart-line skill-icon ml"></i>
+                            <div>
+                                <h4>Machine Learning</h4>
+                                <span class="skill-cat">Data Analytics</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Random Forest, Logistic Regression, Feature Engineering, EDA.</p>
+                    </div>
+
+                    <!-- VLSI & Embedded -->
+                    <div class="skill-card compact-card matte-card">
+                        <div class="skill-head">
+                            <i class="fa-solid fa-microchip skill-icon chip"></i>
+                            <div>
+                                <h4>Verilog / VHDL</h4>
+                                <span class="skill-cat">Hardware & VLSI</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">RTL design, decision logic simulation, in-memory computing array validation.</p>
+                    </div>
+
+                    <div class="skill-card compact-card matte-card">
+                        <div class="skill-head">
+                            <i class="fa-solid fa-wave-square skill-icon cad"></i>
+                            <div>
+                                <h4>Cadence Virtuoso & HSPICE</h4>
+                                <span class="skill-cat">VLSI Tools</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Schematic entry, transient analysis, CMOS decision logic, GAA transistor MAC.</p>
+                    </div>
+
+                    <div class="skill-card compact-card matte-card">
+                        <div class="skill-head">
+                            <i class="fa-solid fa-code skill-icon emb"></i>
+                            <div>
+                                <h4>Embedded C / C++</h4>
+                                <span class="skill-cat">Firmware</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">ARM Cortex-M, STM32, 8051, FreeRTOS, ADC sensor interfaces.</p>
+                    </div>
+
+                    <div class="skill-card compact-card matte-card">
+                        <div class="skill-head">
+                            <i class="fa-solid fa-layer-group skill-icon pcb"></i>
+                            <div>
+                                <h4>PCB & Hardware Tools</h4>
+                                <span class="skill-cat">Hardware</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">KiCAD, Altium, Oscilloscopes, Logic Analyzers, FPGA, Sensor Arrays.</p>
+                    </div>
+
+                    <!-- Core CS & Tools -->
+                    <div class="skill-card compact-card matte-card">
+                        <div class="skill-head">
+                            <i class="fa-solid fa-database skill-icon sql"></i>
+                            <div>
+                                <h4>SQL (MySQL)</h4>
+                                <span class="skill-cat">Relational DB</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Database design, query optimization, normalization & joins.</p>
+                    </div>
+
+                    <div class="skill-card compact-card matte-card">
+                        <div class="skill-head">
+                            <i class="fa-solid fa-sitemap skill-icon dsa"></i>
+                            <div>
+                                <h4>DSA & OOP</h4>
+                                <span class="skill-cat">CS Fundamentals</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Data Structures, Algorithms, Object-Oriented Design in C++/Java.</p>
+                    </div>
+
+                    <div class="skill-card compact-card matte-card">
+                        <div class="skill-head">
+                            <i class="fa-brands fa-git-alt skill-icon git"></i>
+                            <div>
+                                <h4>Git & Dev Tools</h4>
+                                <span class="skill-cat">Workflow</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">GitHub, VS Code, Keil µVision, MATLAB, Linux terminal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">// PORTFOLIO SHOWCASE</span>
+                    <h2 class="section-title">Featured <span class="highlight-text">Projects</span></h2>
+                    <p class="section-intro">Selected engineering projects across AI/ML, Computer Vision, Embedded Systems, and VLSI Hardware.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Smart Prosthetic Limb -->
+                    <div class="project-card matte-card">
+                        <div class="project-header">
+                            <div class="project-badge award"><i class="fa-solid fa-trophy"></i> SIH & Yantra Winner</div>
+                            <span class="project-type">Embedded DSP & AI</span>
+                        </div>
+                        <h3 class="project-title">Smart Prosthetic Limb (Dextra)</h3>
+                        <p class="project-sub">Translating muscle EMG signals into high-precision motor movement.</p>
+
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-angle-right"></i> Engineered a wearable orthosis using EMG sensors and real-time digital signal processing (DSP).</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Developed a custom software-defined low-pass filtering algorithm to strip environmental noise.</li>
+                            <li><i class="fa-solid fa-angle-right"></i> <strong>Won 1st Place</strong> at SIH VIT Selection & <strong>2nd Prize</strong> at Yantra Central Hackathon (₹50,000 cash prize).</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>Python</span><span>EMG Sensors</span><span>DSP</span><span>Motor Control</span><span>Embedded C</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/hritam23" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Driver Drowsiness Detection -->
+                    <div class="project-card matte-card">
+                        <div class="project-header">
+                            <div class="project-badge">AI / Computer Vision</div>
+                            <span class="project-type">Real-Time ML Pipeline</span>
+                        </div>
+                        <h3 class="project-title">IoT Driver Drowsiness Detection Pipeline</h3>
+                        <p class="project-sub">Real-time fatigue monitoring using computer vision & multi-sensor data fusion.</p>
+
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-angle-right"></i> Implemented facial landmark detection and Eye Aspect Ratio (EAR) tracking using Python & OpenCV.</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Integrated intelligent sensor fusion algorithm processing Flex and Gyroscope sensor streams.</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Optimized frame processing latency for immediate alert triggering and high localized accuracy.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>Python</span><span>OpenCV</span><span>NumPy</span><span>Sensor Fusion</span><span>IoT</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/hritam23" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Predictive Healthcare Analytics -->
+                    <div class="project-card matte-card">
+                        <div class="project-header">
+                            <div class="project-badge">Data Science / ML</div>
+                            <span class="project-type">Predictive Modeling</span>
+                        </div>
+                        <h3 class="project-title">Predictive Healthcare Analytics Platform</h3>
+                        <p class="project-sub">Clinical decision support model classifying patient health risk levels.</p>
+
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-angle-right"></i> Developed machine learning classification models for multi-parametric physiological data.</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Performed EDA, feature engineering, missing value imputation, and variance normalization.</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Trained Random Forest & Logistic Regression classifiers with high evaluation metrics.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>NumPy</span><span>EDA</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/hritam23" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: FeRAM Array IIT Bhilai -->
+                    <div class="project-card matte-card">
+                        <div class="project-header">
+                            <div class="project-badge">VLSI & Hardware</div>
+                            <span class="project-type">IIT Bhilai Research</span>
+                        </div>
+                        <h3 class="project-title">FeRAM In-Memory Computing MAC Array</h3>
+                        <p class="project-sub">IIT Bhilai Research Project on hardware AI acceleration.</p>
+
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-angle-right"></i> Designed FeRAM arrays using Gate-All-Around (GAA) transistors and ferroelectric capacitors.</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Executed Multiply-Accumulate (MAC) operations directly in-memory to reduce latency.</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Simulated and validated low-power circuit dynamics using HSPICE and Verilog.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>HSPICE</span><span>Verilog</span><span>GAA Transistors</span><span>FeRAM</span><span>VLSI</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/hritam23" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Logic Switching Circuit -->
+                    <div class="project-card matte-card">
+                        <div class="project-header">
+                            <div class="project-badge">VLSI Circuit</div>
+                            <span class="project-type">Zephor Innovation</span>
+                        </div>
+                        <h3 class="project-title">Logic Switching Circuit for Reverse Vending</h3>
+                        <p class="project-sub">Gate-level decision logic for material classification and credit allocation.</p>
+
+                        <ul class="project-highlights">
+                            <li><i class="fa-solid fa-angle-right"></i> Designed and simulated CMOS decision logic using Cadence Virtuoso.</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Verified circuit functionality through schematic entry and transient analysis.</li>
+                            <li><i class="fa-solid fa-angle-right"></i> Optimized power and signal propagation for embedded reverse vending system integration.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>Cadence Virtuoso</span><span>CMOS</span><span>Transient Analysis</span><span>Schematic Design</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/hritam23" target="_blank" rel="noopener" class="project-link">
+                                <i class="fa-brands fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Achievements Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">// TRACK RECORD</span>
+                    <h2 class="section-title">Experience & <span class="highlight-text">Achievements</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="exp-grid">
+                    <!-- Internships -->
+                    <div class="exp-column">
+                        <h3 class="column-title"><i class="fa-solid fa-briefcase"></i> Work & Research Internships</h3>
+                        
+                        <div class="exp-card matte-card">
+                            <div class="exp-date">May 2026 – June 2026</div>
+                            <h4 class="exp-role">Research Intern</h4>
+                            <span class="exp-company">Indian Institute of Technology (IIT), Bhilai</span>
+                            <p class="exp-desc">Designed a FeRAM array using GAA transistors and ferroelectric capacitors for in-memory computing MAC operations. Simulated & validated using HSPICE & Verilog under Assistant Professor Dr. Nitanshu Chauhan.</p>
+                        </div>
+
+                        <div class="exp-card matte-card">
+                            <div class="exp-date">May 2025 – June 2025</div>
+                            <h4 class="exp-role">Summer Trainee</h4>
+                            <span class="exp-company">Steel Authority of India (SAIL), Bhilai Steel Plant</span>
+                            <p class="exp-desc">Analyzed industrial signal flow paths and developed an Arduino-powered patrolling vehicle for localized safety monitoring in gas-prone industrial zones. Evaluated as 'Excellent'.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hackathons & Recognitions -->
+                    <div class="exp-column">
+                        <h3 class="column-title"><i class="fa-solid fa-trophy"></i> Awards & Hackathons</h3>
+                        
+                        <div class="award-card matte-card">
+                            <div class="award-icon"><i class="fa-solid fa-award"></i></div>
+                            <div>
+                                <h4>2nd Prize Winner – Yantra Central Hackathon</h4>
+                                <span class="award-sub">48-Hour Ideathon • Won ₹50,000 Cash Prize</span>
+                                <p>Recognized for Smart Prosthetic Limb innovation bridging EMG signal processing and motorized orthosis.</p>
+                            </div>
+                        </div>
+
+                        <div class="award-card matte-card">
+                            <div class="award-icon"><i class="fa-solid fa-medal"></i></div>
+                            <div>
+                                <h4>Winner – Smart India Hackathon (SIH) VIT Internals</h4>
+                                <span class="award-sub">VIT Vellore Selection</span>
+                                <p>Secured 1st position in institutional SIH round for biomedical assistive technology.</p>
+                            </div>
+                        </div>
+
+                        <div class="award-card matte-card">
+                            <div class="award-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <div>
+                                <h4>SENSE Open House Exhibition 2025</h4>
+                                <span class="award-sub">VIT Vellore Representative</span>
+                                <p>Selected to represent the School of Electronics Engineering at the annual Open House Exhibition.</p>
+                            </div>
+                        </div>
+
+                        <div class="award-card matte-card">
+                            <div class="award-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                            <div>
+                                <h4>Sensors & Biomedical IIAC Conclave Hackathon</h4>
+                                <span class="award-sub">Industry-Academia Conclave 2025</span>
+                                <p>Appreciation certificate for sustainable electronics and medical device innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-card matte-card">
+                    <div class="contact-header">
+                        <span class="section-subtitle">// GET IN TOUCH</span>
+                        <h2 class="contact-title">Let's Build Something <span class="highlight-text">Exceptional</span></h2>
+                        <p class="contact-p">Actively seeking full-time opportunities and roles in <strong>AI/ML, Data Science, Embedded Systems, & VLSI Hardware Engineering</strong>.</p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope contact-icon"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <a href="mailto:hritamshrivastava1523@gmail.com">hritamshrivastava1523@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone contact-icon"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <a href="tel:+917987672027">+91 79876 72027</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-brands fa-linkedin-in contact-icon"></i>
+                            <div>
+                                <h5>LinkedIn</h5>
+                                <a href="https://www.linkedin.com/in/hritam-shrivastava-07679a28a/" target="_blank" rel="noopener">hritam-shrivastava-07679a28a</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-brands fa-github contact-icon"></i>
+                            <div>
+                                <h5>GitHub</h5>
+                                <a href="https://github.com/hritam23" target="_blank" rel="noopener">github.com/hritam23</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="mailto:hritamshrivastava1523@gmail.com" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-paper-plane"></i> Send Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/hritam-shrivastava-07679a28a/" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Hritam Shrivastava. Crafted for Engineering Excellence.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/hritam23" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hritam-shrivastava-07679a28a/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:hritamshrivastava1523@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal Preview -->
+    <div id="certModal" class="modal-overlay" onclick="closeCertModal(event)">
+        <div class="modal-content matte-card">
+            <button class="modal-close" onclick="closeCertModalForce()">&times;</button>
+            <div class="modal-header">
+                <i class="fa-solid fa-certificate modal-icon"></i>
+                <div>
+                    <h3 id="modalTitle">Certificate Details</h3>
+                    <span id="modalIssuer" class="modal-sub">Issuer Name</span>
+                </div>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic Content injected via JS -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeCertModalForce()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/cursor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
