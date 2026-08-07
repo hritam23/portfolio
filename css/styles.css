@@ -344,11 +344,12 @@ section {
 
 .hero-subtitle {
     font-family: var(--font-mono);
-    font-size: 1.4rem;
+    font-size: 1.35rem;
+    line-height: 1.45;
     font-weight: 600;
     color: var(--text-secondary);
     margin-bottom: 20px;
-    min-height: 2.2rem;
+    min-height: 3.9rem; /* Reserved height for 2 lines - zero layout shift */
 }
 
 .typewriter {
@@ -1186,6 +1187,13 @@ section {
 
     .hero-title {
         font-size: 2.1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.15rem;
+        line-height: 1.45;
+        min-height: 3.4rem;
+        margin-bottom: 16px;
     }
 
     .contact-title {
