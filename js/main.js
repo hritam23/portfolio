@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "AI & Machine Learning Systems",
         "VLSI & Embedded Systems",
         "Computer Vision & Data Science",
-        "Biomedical Hardware Innovations"
+        "Product Analysis"
     ];
     let phraseIdx = 0;
     let charIdx = 0;
